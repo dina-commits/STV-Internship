@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 48" fill="none" aria-hidden="true">
+  <path d="M20 18 L28 18 L28 22 L24 22 L24 30 L20 30 Z" fill="rgba(255,255,255,0.95)"/>
+  <path d="M28 22 L36 22 L36 26 L32 26 L32 30 L28 30 Z" fill="rgba(255,255,255,0.95)"/>
+  <path d="M32 26 L40 26 L40 30 L36 30 L36 34 L32 34 Z" fill="rgba(255,255,255,0.95)"/>
+  <path d="M40 18 L48 18 L48 22 L44 22 L44 30 L40 30 Z" fill="rgba(255,255,255,0.95)"/>
+  <path d="M44 22 L52 22 L52 26 L48 26 L48 30 L44 30 Z" fill="rgba(255,255,255,0.95)"/>
+  <text x="66" y="28" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-size="10" font-weight="600">Levers</text>
+</svg>
