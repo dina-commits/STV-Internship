@@ -354,9 +354,7 @@ body {
   height: auto;
   max-height: 48px;
   object-fit: contain;
-  filter: grayscale(1) opacity(0.8);
   background: transparent;
-  mix-blend-mode: lighten;
 }
 
 /* Who is STV — stats strip */
