@@ -508,8 +508,30 @@ body {
   cursor: pointer;
   font-weight: 500;
   list-style: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
+/* Smooth expand/collapse where ::details-content + interpolate-size are supported */
+.faq-item {
+  interpolate-size: allow-keywords;
+}
+.faq-item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition: block-size 0.3s ease, content-visibility 0.3s allow-discrete;
+}
+.faq-item[open]::details-content {
+  block-size: auto;
+}
+/* Fallback: fade/slide the answer in on open in older browsers */
+.faq-item[open] p {
+  animation: faqReveal 0.3s ease;
+}
+@keyframes faqReveal {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 .faq-item p {
   padding-bottom: 1rem;
   color: var(--text-muted);
