@@ -16,7 +16,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: transparent; }
+html { scroll-behavior: smooth; background: var(--bg); }
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -348,7 +348,14 @@ body {
   text-transform: lowercase;
   margin: 0 0 1rem;
 }
-.backers-logos-wrap { margin: 0 auto; position: relative; z-index: 1; background: transparent; }
+.backers-logos-wrap { margin: 0 auto; position: relative; z-index: 1; background: transparent; width: fit-content; }
+.backers-logo-link {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 16.666%;
+  z-index: 2;
+}
 .backers-logos-img {
   max-width: 100%;
   height: auto;
